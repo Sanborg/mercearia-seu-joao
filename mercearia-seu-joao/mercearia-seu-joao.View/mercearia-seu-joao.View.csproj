@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="do-utilizador.png" />
+    <None Remove="retangulo-arredondado.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\mercearia-seu-joao.Controller\mercearia-seu-joao.Controller.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="do-utilizador.png" />
+    <Resource Include="retangulo-arredondado.png" />
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF3E3C3C">
+        <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Margin="325,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="E-mail:" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="boxEmail" HorizontalAlignment="Center" Margin="0,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBlock x:Name="txtSenha" HorizontalAlignment="Left" Margin="325,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Senha:" FontWeight="Bold" Foreground="White"/>
+        <PasswordBox x:Name="boxSenha" HorizontalAlignment="Center" Margin="0,303,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBlock x:Name="txtEsqueceuSenha" HorizontalAlignment="Left" Margin="325,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Esqueceu a senha?" FontWeight="Normal" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="325,39,0,0" VerticalAlignment="Top" Width="156" Source="/do-utilizador.png"/>
+        <Button Content="ENTRAR" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Height="75" Width="134" BorderBrush="{x:Null}" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/retangulo-arredondado.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
