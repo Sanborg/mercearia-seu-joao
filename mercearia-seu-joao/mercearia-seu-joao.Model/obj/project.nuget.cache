@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FI4TOokk8BmMtJTnhP8ZaD14kDjX6329BeDlF/IM83PEeqFWqHz0pPpbA19JXOrtchWcrjM5FB1lfWStLRrpeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rod_s\\source\\repos\\mercearia-seu-joao\\mercearia-seu-joao.Model\\mercearia-seu-joao.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rod_s\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
