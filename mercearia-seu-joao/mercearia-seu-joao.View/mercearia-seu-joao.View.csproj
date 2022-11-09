@@ -11,15 +11,18 @@
   <ItemGroup>
     <None Remove="do-utilizador.png" />
     <None Remove="retangulo-arredondado.png" />
+    <None Remove="Seu João Marcearia.png" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\mercearia-seu-joao.Controller\mercearia-seu-joao.Controller.csproj" />
+    <ProjectReference Include="..\mercearia-seu-joao.Model\mercearia-seu-joao.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="do-utilizador.png" />
     <Resource Include="retangulo-arredondado.png" />
+    <Resource Include="Seu João Marcearia.png" />
   </ItemGroup>
 
 </Project>

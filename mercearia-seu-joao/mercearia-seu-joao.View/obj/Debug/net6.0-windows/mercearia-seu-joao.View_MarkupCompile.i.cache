@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\
+C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\
 mercearia_seu_joao.View
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\App.xaml
-11407045341
+C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\App.xaml
+5276715448
 
-51889106570
-197-832749260
-MainWindow.xaml;
+9-231529941
+197433504267
+frmMenu.xaml;frmProduto.xaml;frmUsuario.xaml;frmVenderProduto.xaml;MainWindow.xaml;
 
-True
+False
 

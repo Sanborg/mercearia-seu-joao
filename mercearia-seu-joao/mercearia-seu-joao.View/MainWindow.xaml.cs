@@ -31,6 +31,7 @@ namespace mercearia_seu_joao.View
             {
                 string email = boxEmail.Text;
                 string senha = boxSenha.Password;
+                Login(email, senha);
 
             }
         }
@@ -61,6 +62,15 @@ namespace mercearia_seu_joao.View
               );
                 return false;
             }
+        }
+        private void Login(string email, string senha)
+        {
+            Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
+            string nomeUsuario = usuario.nome;
+            string tipoUsuario = usuario.tipoUsuario;
+            frmMenu frmMenu = new frmMenu(nomeUsuario, tipoUsuario);
+            frmMenu.Show();
+            Close();
         }
     }
 }
