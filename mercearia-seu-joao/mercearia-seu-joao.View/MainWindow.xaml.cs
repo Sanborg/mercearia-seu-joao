@@ -25,12 +25,34 @@ namespace mercearia_seu_joao.View
             InitializeComponent();
         }
 
+        private void AbrirTelaMenu()
+        {
+            MenuPlaceHolder frmMenu = new MenuPlaceHolder();
+            frmMenu.Show();
+            Close();
+        }
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(VerificaCampos() == true)
             {
                 string email = boxEmail.Text;
                 string senha = boxSenha.Password;
+                Usuario usuario = ConsultaUsuario.ObterUsuarioPeloLoginSenha(email, senha);
+                if(usuario != null)
+                {
+                    AbrirTelaMenu();
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                     "Email ou senha incorretos, tente novamente",
+                     "Aviso",
+                     MessageBoxButton.OK,
+                     MessageBoxImage.Warning
+                     );
+                }
 
             }
         }
