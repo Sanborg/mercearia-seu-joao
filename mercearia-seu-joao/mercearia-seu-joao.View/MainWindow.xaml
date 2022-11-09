@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#FF3E3C3C">
         <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Margin="325,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="E-mail:" FontWeight="Bold" Foreground="White"/>
         <TextBox x:Name="boxEmail" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30"/>
@@ -13,11 +15,7 @@
         <PasswordBox x:Name="boxSenha" HorizontalAlignment="Center" Margin="0,277,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
         <TextBlock x:Name="txtEsqueceuSenha" HorizontalAlignment="Left" Margin="325,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Esqueceu a senha?" FontWeight="Normal" Foreground="White" Height="26" Width="108" MouseLeftButtonDown="EsqueceuSenhaUsuario"/>
         <Image HorizontalAlignment="Left" Height="150" Margin="325,25,0,0" VerticalAlignment="Top" Width="156" Source="/do-utilizador.png"/>
-        <Button Content="ENTRAR" HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Height="91" Width="150" BorderBrush="{x:Null}" FontWeight="Bold" Click="Button_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/retangulo-arredondado.png" Stretch="Fill"/>
-            </Button.Background>
-        </Button>
+        <Button x:Name="btnEntrar" Content="ENTRAR" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Height="62" Width="172" BorderBrush="{x:Null}" FontWeight="Bold" Click="Button_Click" Background="#FF4294FF" RenderTransformOrigin="0,0" />
 
     </Grid>
 </Window>
