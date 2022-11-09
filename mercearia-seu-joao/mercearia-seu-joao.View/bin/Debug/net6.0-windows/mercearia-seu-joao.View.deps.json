@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "mercearia-seu-joao.View/1.0.0": {
         "dependencies": {
-          "mercearia-seu-joao.Controller": "1.0.0"
+          "mercearia-seu-joao.Controller": "1.0.0",
+          "mercearia-seu-joao.Model": "1.0.0"
         },
         "runtime": {
           "mercearia-seu-joao.View.dll": {}

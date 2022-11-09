@@ -1,20 +1,20 @@
 ﻿mercearia-seu-joao.View
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\
+C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\
 mercearia_seu_joao.View
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\App.xaml
-11407045341
+C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\App.xaml
+5276715448
 
-51889106570
-197363525378
-MainWindow.xaml;
+7941161228
+197-665702968
+frmMenu.xaml;frmProduto.xaml;frmUsuario.xaml;frmVenderProduto.xaml;MainWindow.xaml;
 
-True
+False
 

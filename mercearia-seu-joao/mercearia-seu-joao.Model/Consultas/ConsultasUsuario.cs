@@ -29,7 +29,6 @@ public class ConsultasUsuario
                 usuario.senha = leitura.GetString("senha");
                 usuario.tipoUsuario = leitura.GetString("tipoUsuario");
                 usuario.dataHoraInclusao = leitura.GetDateTime("dataHoraInclusao");
-                usuario.dataHoraExclusao = leitura.GetDateTime("dataHoraExclusao");
             }
 
         }

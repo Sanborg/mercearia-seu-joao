@@ -8,7 +8,7 @@ public class cUsuario
 {
     public static Usuario BuscarDadosUsuario(string email, string senha)
     {
-        return ConsultasUsuario.Login(email, senha);
+        return ConsultasUsuario.BuscarDadosUsuario(email, senha);
     }
 }
 

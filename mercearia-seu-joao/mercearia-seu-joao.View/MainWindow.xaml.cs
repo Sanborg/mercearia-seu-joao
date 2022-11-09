@@ -24,6 +24,10 @@ namespace mercearia_seu_joao.View
         {
             InitializeComponent();
         }
+        public MainWindow(string nomeUsuario, string tipoUsuario)
+        {
+            InitializeComponent();
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -63,12 +67,10 @@ namespace mercearia_seu_joao.View
                 return false;
             }
         }
-        private void Login(string email, string senha)
+        public void Login(string email, string senha)
         {
             Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
-            string nomeUsuario = usuario.nome;
-            string tipoUsuario = usuario.tipoUsuario;
-            frmMenu frmMenu = new frmMenu(nomeUsuario, tipoUsuario);
+            frmMenu frmMenu = new frmMenu(usuario.nome, usuario.tipoUsuario);
             frmMenu.Show();
             Close();
         }

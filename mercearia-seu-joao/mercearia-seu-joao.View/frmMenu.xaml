@@ -14,7 +14,7 @@
         <Button x:Name="btnUsuario" Content="Usuários" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Center" Height="80" Width="280" BorderBrush="{x:Null}" FontWeight="Bold" Click="PressionarBtnUsuarios" Background="#FF4294FF" RenderTransformOrigin="0,0" FontSize="22" />
         <Button x:Name="btnEfetuarVenda" Content="Efetuar Venda" HorizontalAlignment="Center" Margin="800,120,0,0" VerticalAlignment="Center" Height="80" Width="280" BorderBrush="{x:Null}" FontWeight="Bold" Click="PressionarBtnEfetuarVenda" Background="#FF4294FF" RenderTransformOrigin="0,0" FontSize="22" />
         <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Center" Margin="900,550,0,0" VerticalAlignment="Center" Height="80" Width="280" BorderBrush="{x:Null}" FontWeight="Bold" Click="PressionarBtnSair" Background="#FF4294FF" RenderTransformOrigin="0,0" FontSize="24" />
-        <TextBlock x:Name="txtData" HorizontalAlignment="Center" Height="80" Margin="0,550,650,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="600" FontSize="22"/>
+        <TextBlock x:Name="txtData" HorizontalAlignment="Center" Height="80" Margin="0,550,650,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="600" FontSize="24" Foreground="White"/>
 
     </Grid>
 </Window>

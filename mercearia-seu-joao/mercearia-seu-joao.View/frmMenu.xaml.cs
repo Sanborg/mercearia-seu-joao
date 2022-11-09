@@ -20,6 +20,10 @@ namespace mercearia_seu_joao.View
     public partial class frmMenu : Window
     {
         SolidColorBrush corBtnIndisponivel = new SolidColorBrush(Color.FromArgb(255, 211, 211, 211));
+
+        public string nomeUsuario { get; }
+        public string tipoUsuario { get; }
+
         public frmMenu()
         {
             InitializeComponent();
@@ -30,34 +34,33 @@ namespace mercearia_seu_joao.View
             InitializeComponent();
             this.nomeUsuario = nomeUsuario;
             this.tipoUsuario = tipoUsuario;
+            CumprimentarUsuario();
+            AnalisaTipoUsuario();
         }
-
-        private void PressionarBtnProdutos(object sender, RoutedEventArgs e)
+        public void AnalisaTipoUsuario()
         {
-            if(tipoUsuario == "gerente")
+            if(tipoUsuario == "caixa")
             {
-                Window frmProduto = new frmProduto();
-                frmProduto.Show();
+                btnProduto.IsHitTestVisible = false;
+                btnUsuario.IsHitTestVisible = false;
+                btnProduto.Background = corBtnIndisponivel;
+                btnUsuario.Background = corBtnIndisponivel;
             }
             else
             {
-                btnProduto.IsHitTestVisible = false;
-                btnProduto.Background = corBtnIndisponivel;
+
             }
+        }
+        private void PressionarBtnProdutos(object sender, RoutedEventArgs e)
+        {
+                Window frmProduto = new frmProduto();
+                frmProduto.Show();
         }
 
         private void PressionarBtnUsuarios(object sender, RoutedEventArgs e)
         {
-            if (tipoUsuario == "gerente")
-            {
                 Window frmUsuario = new frmUsuario();
                 frmUsuario.Show();
-            }
-            else
-            {
-                btnUsuario.IsHitTestVisible = false;
-                btnUsuario.Background = corBtnIndisponivel;
-            }
         }
 
         private void PressionarBtnEfetuarVenda(object sender, RoutedEventArgs e)
