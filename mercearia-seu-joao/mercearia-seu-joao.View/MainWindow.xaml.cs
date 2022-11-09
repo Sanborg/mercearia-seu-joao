@@ -69,10 +69,66 @@ namespace mercearia_seu_joao.View
         }
         public void Login(string email, string senha)
         {
-            Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
-            frmMenu frmMenu = new frmMenu(usuario.nome, usuario.tipoUsuario);
-            frmMenu.Show();
-            Close();
+            int tamanhoSenha = senha.Length;
+            bool caractereEspecial = false;
+            bool caractereNumerico = false;
+            bool caractereAlfabeticoMaiusculo = false;
+            bool caractereAlfabeticoMinusculo = false;
+            bool ponto = false;
+            bool arroba = false;
+
+            foreach (char i in senha)
+            {
+                if (Char.IsNumber(i) == true)
+                {
+                    caractereNumerico = true;
+                }
+                else if (Char.IsLetter(i) == true)
+                {
+                    if (Char.IsUpper(i) == true)
+                    {
+                        caractereAlfabeticoMaiusculo = true;
+                    }
+                    else if (Char.IsLower(i) == true)
+                    {
+                        caractereAlfabeticoMinusculo = true;
+                    }
+                }
+                else if (i.ToString() == "%" || i.ToString() == "$" || i.ToString() == "#" || i.ToString() == "@")
+                {
+                    caractereEspecial = true;
+                }
+            }
+            foreach (char i in email)
+            {
+                if (i.ToString() == "@")
+                {
+                    arroba = true;
+                }
+                else if (i.ToString() == ".")
+                {
+                    ponto = true;
+                }
+            }
+            if (caractereNumerico == true && caractereEspecial == true && caractereAlfabeticoMaiusculo == true && caractereAlfabeticoMinusculo == true && tamanhoSenha >= 8)
+            {
+                if (arroba == true && ponto == true)
+                {
+                    Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
+                    frmMenu frmMenu = new frmMenu(usuario.nome, usuario.tipoUsuario);
+                    frmMenu.Show();
+                    Close();
+                }
+                else
+                {
+                    
+                }
+            }
+            else
+            {
+                
+            }
+
         }
     }
 }
