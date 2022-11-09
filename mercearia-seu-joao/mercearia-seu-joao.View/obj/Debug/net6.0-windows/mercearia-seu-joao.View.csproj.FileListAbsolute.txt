@@ -52,3 +52,5 @@ C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\merc
 C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.csproj.CopyComplete
 C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.genruntimeconfig.cache
 C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.View.dll
+C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\MenuPlaceHolder.g.cs
+C:\Users\Usuario\Source\Repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\MenuPlaceHolder.baml
