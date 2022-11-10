@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KdRK7yiRpfH19M6XlJidi+s6L3T9lw8KytbDHb8q4y2p5Ymow/0k+6lXSCQiJ0f9fOXLbSgPXZ33Nvmi02brrw==",
+  "dgSpecHash": "tJNRt0JpeMIJp3rtZjnENKruisLRqMn16rQV7N8JaYRD98kkJ5QqTZpyXyfTQPqQusZfWcg46E4Vx+928fUPRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\res0083521\\Source\\Repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
+  "projectFilePath": "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\res0083521\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512"
+    "C:\\Users\\res0073732\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512"
   ],
   "logs": []
 }

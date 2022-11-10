@@ -36,7 +36,7 @@ namespace mercearia_seu_joao.View
                 string email = boxEmail.Text;
                 string senha = boxSenha.Password;
                 Login(email, senha);
-
+             
             }
         }
 
@@ -121,12 +121,22 @@ namespace mercearia_seu_joao.View
                 }
                 else
                 {
-                    
+                  MessageBoxResult result = MessageBox.Show(
+                 "Email invalido, insira caracteres especiais.",
+                 "Informação",
+                 MessageBoxButton.OK,
+                 MessageBoxImage.Warning
+             );
                 }
             }
             else
             {
-                
+                MessageBoxResult result = MessageBox.Show(
+                 "Senha Invalida. A senha deve conter caracteres maiúsculos, minúsculos, numéricos e especiais, além de nó minimo 8 caracteres.",
+                 "Informação",
+                 MessageBoxButton.OK,
+                 MessageBoxImage.Warning
+                 );
             }
 
         }
