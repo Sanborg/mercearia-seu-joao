@@ -19,6 +19,9 @@ namespace mercearia_seu_joao.View
     /// </summary>
     public partial class frmMenu : Window
     {
+        bool telaProdutoFoiAberta = false;
+        bool telaUsuarioFoiAberta = false;
+        bool telaVenderProdutoFoiAberta = false;
         SolidColorBrush corBtnIndisponivel = new SolidColorBrush(Color.FromArgb(255, 211, 211, 211));
 
         public string nomeUsuario { get; }
@@ -53,14 +56,15 @@ namespace mercearia_seu_joao.View
         }
         private void PressionarBtnProdutos(object sender, RoutedEventArgs e)
         {
-                Window frmProduto = new frmProduto();
-                frmProduto.Show();
+            telaProdutoFoiAberta = true;
+            Window frmProduto = new frmProduto();
+            frmProduto.Show();
         }
 
         private void PressionarBtnUsuarios(object sender, RoutedEventArgs e)
         {
-                Window frmUsuario = new frmUsuario();
-                frmUsuario.Show();
+            Window frmUsuario = new frmUsuario();
+            frmUsuario.Show();
         }
 
         private void PressionarBtnEfetuarVenda(object sender, RoutedEventArgs e)
@@ -71,7 +75,9 @@ namespace mercearia_seu_joao.View
 
         private void PressionarBtnSair(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Window frmLogin = new MainWindow();
+            frmLogin.Show();
+            Close();
         }
         private void CumprimentarUsuario()
         {
