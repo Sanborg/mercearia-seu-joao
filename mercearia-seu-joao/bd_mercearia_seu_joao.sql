@@ -40,4 +40,6 @@ FOREIGN KEY(idProduto) references Produto(id)
 
 INSERT INTO Usuario (nome, email, senha, tipoUsuario, dataHoraInclusao) VALUES
 ('Gerente','gerente@gmail.com','G3rente@','gerente','2022-11-07 15:00:00'),
-('Caixa','caixa@gmail.com','C@1xa','caixa','2022-11-07 15:00:00');
+('Caixa','caixa@gmail.com','C@1xa123','caixa','2022-11-07 15:00:00');
+
+

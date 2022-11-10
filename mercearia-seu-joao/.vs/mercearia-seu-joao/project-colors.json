@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5fdeb80c-21ba-4d30-b9a4-6bf6f111b10f": {
+      "ProjectGuid": "5fdeb80c-21ba-4d30-b9a4-6bf6f111b10f",
+      "DisplayName": "mercearia-seu-joao.Controller",
+      "ColorIndex": 0
+    },
+    "9357147d-d176-40ee-b29d-7fbc4f0787ed": {
+      "ProjectGuid": "9357147d-d176-40ee-b29d-7fbc4f0787ed",
+      "DisplayName": "mercearia-seu-joao.Model",
+      "ColorIndex": 1
+    },
+    "205c9137-0d4a-4bc2-b28b-9543c2347905": {
+      "ProjectGuid": "205c9137-0d4a-4bc2-b28b-9543c2347905",
+      "DisplayName": "mercearia-seu-joao.View",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
