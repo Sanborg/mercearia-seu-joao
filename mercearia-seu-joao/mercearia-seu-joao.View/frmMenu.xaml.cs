@@ -46,7 +46,7 @@ namespace mercearia_seu_joao.View
                 btnProduto.Background = corBtnIndisponivel;
                 btnUsuario.Background = corBtnIndisponivel;
             }
-            else
+            else if(tipoUsuario == "gerente")
             {
 
             }
