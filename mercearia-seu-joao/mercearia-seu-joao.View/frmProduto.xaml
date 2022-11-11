@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="frmProduto" Height="700" Width="950">
+        Title="frmProduto" Height="700" Width="950"
+        ResizeMode="NoResize">
     <Grid Background="#FF3E3C3C">
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Foreground="White"><Run Text="Gerenciar "/><Run Language="pt-br" Text="P"/><Run Text="roduto"/></TextBlock>
         <TextBox HorizontalAlignment="Center" Margin="0,57,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="950" Height="1" RenderTransformOrigin="0.5,0.5">
@@ -21,18 +22,18 @@
         <TextBlock x:Name="txt_id" HorizontalAlignment="Left" Margin="51,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Foreground="White"><Run Language="pt-br" Text="ID"/></TextBlock>
         <TextBox x:Name="txtbox_id" HorizontalAlignment="Left" Margin="51,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" Height="25" FontSize="18"/>
         <TextBlock x:Name="txt_nome" HorizontalAlignment="Left" Margin="51,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Foreground="White"><Run Language="pt-br" Text="Nome"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <TextBox x:Name="txtbox_nome" HorizontalAlignment="Left" Margin="51,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="25" FontSize="18"/>
+        <TextBox x:Name="boxNomeProduto" HorizontalAlignment="Left" Margin="51,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="25" FontSize="18"/>
         <TextBlock x:Name="txt_quantidade" HorizontalAlignment="Left" Margin="51,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Foreground="White"><Run Language="pt-br" Text="Quantidade"/><LineBreak/><Run Language="pt-br"/><LineBreak/><Run/></TextBlock>
         <TextBlock x:Name="txt_preco_unitario" HorizontalAlignment="Left" Margin="180,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Foreground="White"><Run Text="Preço "/><Run Text="U"/><Run Text="nit"/><Run Language="pt-br" Text="á"/><Run Text="rio"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="txtbox_quantidade" HorizontalAlignment="Left" Margin="51,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="25" FontSize="18"/>
-        <TextBox x:Name="txtbox_preco_unitario" HorizontalAlignment="Left" Margin="180,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Height="25" FontSize="18"/>
+        <TextBox x:Name="boxQuantidadeProduto" HorizontalAlignment="Left" Margin="51,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="25" FontSize="18"/>
+        <TextBox x:Name="boxPrecoUnitario" HorizontalAlignment="Left" Margin="180,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Height="25" FontSize="18"/>
         <TextBlock x:Name="txt_fornecedor" HorizontalAlignment="Left" Margin="51,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Foreground="White"><Run Language="pt-br" Text="Fornecedor"/></TextBlock>
-        <TextBox x:Name="txtbox_fornecedor" HorizontalAlignment="Left" Margin="51,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="25" FontSize="18"/>
+        <TextBox x:Name="boxFornecedorProduto" HorizontalAlignment="Left" Margin="51,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="25" FontSize="18"/>
         <Button x:Name="btn_novo" Content="Novo" HorizontalAlignment="Left" Margin="51,467,0,0" VerticalAlignment="Top" Width="254" Height="30" Background="#FF4294FF" FontSize="20" Click="NovoProduto" FontWeight="Bold"/>
         <Button x:Name="btn_limpar" Content="Limpar" HorizontalAlignment="Left" Margin="51,510,0,0" VerticalAlignment="Top" Width="254" Height="30" Background="#FF4294FF" FontSize="20" Click="LimpaProduto" FontWeight="Bold"/>
         <Button x:Name="btn_alterar" Content="Alterar" HorizontalAlignment="Left" Margin="51,553,0,0" VerticalAlignment="Top" Width="254" Height="30" Background="#FF4294FF" FontSize="20" Click="AlterarProduto" FontWeight="Bold"/>
         <Button x:Name="btn_excluir" Content="Excluir" HorizontalAlignment="Left" Margin="51,596,0,0" VerticalAlignment="Top" Width="254" Height="30" Background="#FF4294FF" FontSize="20" Click="ExcluirProduto" FontWeight="Bold"/>
-        <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=1}" Margin="376,58,0,0" AutoGenerateColumns="False" MouseDoubleClick="PegarItemNoGrid" Background="#FF635B5B" BorderBrush="#FFABADB3">
+        <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=1}" Margin="376,58,0,0" AutoGenerateColumns="False" MouseDoubleClick="PegarItemNoGrid" Background="#FF9C9797" BorderBrush="#FFABADB3">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding id}" Header="Id"/>
                 <DataGridTextColumn Binding="{Binding nome}" Header="Nome"/>

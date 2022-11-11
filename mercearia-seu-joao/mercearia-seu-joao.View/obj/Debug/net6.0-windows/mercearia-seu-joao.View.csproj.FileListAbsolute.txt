@@ -89,3 +89,15 @@ C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\m
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.View.dll
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.pdb
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.genruntimeconfig.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.csproj.AssemblyReference.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\frmMenu.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\frmProduto.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\frmUsuario.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\frmVenderProduto.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View_MarkupCompile.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View_MarkupCompile.lref
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.View.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.pdb

@@ -34,3 +34,15 @@ C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\m
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.dll
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.Model.dll
 C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.pdb
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\bin\Debug\net6.0-windows\mercearia-seu-joao.Model.deps.json
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\bin\Debug\net6.0-windows\mercearia-seu-joao.Model.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\bin\Debug\net6.0-windows\ref\mercearia-seu-joao.Model.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\bin\Debug\net6.0-windows\mercearia-seu-joao.Model.pdb
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.csproj.AssemblyReference.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.AssemblyInfoInputs.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.AssemblyInfo.cs
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.csproj.CoreCompileInputs.cache
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.Model.dll
+C:\Users\res0079329\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.Model\obj\Debug\net6.0-windows\mercearia-seu-joao.Model.pdb

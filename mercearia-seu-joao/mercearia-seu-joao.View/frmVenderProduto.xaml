@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="frmVenderProduto" Height="450" Width="800">
-    <Grid>
-        
+        Title="Vender Produto" Height="700" Width="950">
+    <Grid x:Name="background" Background="#FF3E3C3C">
+        <TextBlock x:Name="txtIdProduto" HorizontalAlignment="Left" Margin="22,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Text="I"/><Run Language="pt-br" Text="D"/><Run Text=" produto"/></TextBlock>
+        <TextBox x:Name="boxId" HorizontalAlignment="Left" Margin="22,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="122,74,0,0" VerticalAlignment="Top" Height="38" Width="79" FontSize="18" Background="#FF4294FF" FontWeight="Bold" Click="BuscarProduto"/>
+        <TextBlock x:Name="txtNomeProduto" HorizontalAlignment="Left" Margin="22,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Foreground="White"><Run Language="pt-br" Text="Nome"/></TextBlock>
+        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="22,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Height="40"/>
+        <TextBox x:Name="boxQuantidade" HorizontalAlignment="Left" Margin="22,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
+        <TextBox x:Name="boxPrecoTotalProduto" HorizontalAlignment="Left" Margin="129,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
+        <TextBlock x:Name="quantidade" HorizontalAlignment="Left" Margin="22,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Language="pt-br" Text="Quantidade"/></TextBlock>
+        <TextBlock x:Name="txtPreco" HorizontalAlignment="Left" Margin="130,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Language="pt-br" Text="Preço Total"/></TextBlock>
+        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="22,320,0,0" VerticalAlignment="Top" Height="35" Width="181" FontSize="18" Background="#FF4294FF" FontWeight="Bold" Click="AdicionarProduto"/>
+        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Margin="21,373,0,0" VerticalAlignment="Top" Height="35" Width="181" FontSize="18" Background="#FF4294FF" FontWeight="Bold" Click="LimparProduto"/>
+        <TextBlock x:Name="txtValorFinal" HorizontalAlignment="Left" Margin="21,438,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="180" FontSize="24" Foreground="White"><Run Language="pt-br" Text="Valor Final:"/></TextBlock>
+        <Button x:Name="btnRealizarVenda" Content="Realizar Venda" HorizontalAlignment="Left" Margin="22,500,0,0" VerticalAlignment="Top" Height="65" Width="229" FontSize="20" FontWeight="Bold" Background="#FF4294FF" Click="RealizarVenda"/>
+        <TextBlock x:Name="txtLista" HorizontalAlignment="Left" Margin="376,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" FontFamily="Segoe UI" Foreground="White"><Run Language="pt-br" Text="Lista de Compra"/></TextBlock>
+        <DataGrid x:Name="datagridProdutos" d:ItemsSource="{d:SampleData ItemCount=1}" Margin="376,58,0,0" AutoGenerateColumns="False" MouseDoubleClick="PegarItemNoGrid" Background="#FF9C9797" BorderBrush="#FFABADB3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding id}" Header="Id"/>
+                <DataGridTextColumn Binding="{Binding nome}" Header="Nome"/>
+                <DataGridTextColumn Binding="{Binding quantidade}" Header="Quantidade"/>
+                <DataGridTextColumn Binding="{Binding preco_unitario}" Header="Preco Unitário"/>
+                <DataGridTextColumn Binding="{Binding fornecedor}" Header="Fornecedor"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="950" Height="1" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="txtRealizarVenda" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Foreground="White" Text="Realizar Venda"/>
+
     </Grid>
 </Window>
