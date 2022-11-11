@@ -72,7 +72,7 @@ namespace mercearia_seu_joao.View
         {
             if (txtbox_id.Text != "")
             {
-                int id = int.Parse(txtbox_id);
+                int id = int.Parse(txtbox_id.Text);
             }
         }
 
@@ -91,9 +91,9 @@ namespace mercearia_seu_joao.View
             Produto Produto = (Produto)datagrid.SelectedItems;
             txtbox_id.Text = Produto.id.ToString();
             txtbox_nome.Text = Produto.nome;
-            txtbox_preco_unitario = Produto.preco_unitario.ToString();
-            txtbox_quantidade = Produto.quantidade.ToString();
-            txtbox_fornecedor = Produto.fornecedor;
+            txtbox_preco_unitario.Text = Produto.preco_unitario.ToString();
+            txtbox_quantidade.Text = Produto.quantidade.ToString();
+            txtbox_fornecedor.Text = Produto.fornecedor;
         }
 
         private void PegarItemNoGrid(object sender, MouseButtonEventArgs e)

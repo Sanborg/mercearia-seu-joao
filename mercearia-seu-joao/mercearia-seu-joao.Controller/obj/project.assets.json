@@ -71,23 +71,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\res0073732\\.nuget\\packages\\": {},
+    "C:\\Users\\RES0112515\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
+      "projectUniqueName": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
       "projectName": "mercearia-seu-joao.Controller",
-      "projectPath": "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
-      "packagesPath": "C:\\Users\\res0073732\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\obj\\",
+      "projectPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\mercearia-seu-joao.Controller.csproj",
+      "packagesPath": "C:\\Users\\RES0112515\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Controller\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\res0073732\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RES0112515\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -102,8 +102,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Model\\mercearia-seu-joao.Model.csproj": {
-              "projectPath": "C:\\Users\\res0073732\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Model\\mercearia-seu-joao.Model.csproj"
+            "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Model\\mercearia-seu-joao.Model.csproj": {
+              "projectPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\mercearia-seu-joao\\mercearia-seu-joao\\mercearia-seu-joao.Model\\mercearia-seu-joao.Model.csproj"
             }
           }
         }

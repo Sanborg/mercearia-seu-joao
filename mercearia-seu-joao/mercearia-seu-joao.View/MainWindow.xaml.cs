@@ -115,23 +115,35 @@ namespace mercearia_seu_joao.View
                 if (arroba == true && ponto == true)
                 {
                     Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
-                    frmMenu frmMenu = new frmMenu(usuario.nome, usuario.tipoUsuario);
-                    frmMenu.Show();
-                    Close();
+                    if(usuario != null)
+                    {
+                        frmMenu frmMenu = new frmMenu(usuario.nome, usuario.tipoUsuario);
+                        frmMenu.Show();
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBoxResult result = MessageBox.Show(
+                        "Usuário não encontrado.",
+                        "Erro",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Error
+                        );
+                    }
                 }
                 else
                 {
-                  MessageBoxResult result = MessageBox.Show(
-                 "Email invalido, insira caracteres especiais.",
-                 "Informação",
-                 MessageBoxButton.OK,
-                 MessageBoxImage.Warning
-             );
+                     MessageBoxResult result = MessageBox.Show(
+                     "Email invalido, insira caracteres especiais.",
+                     "Infomação",
+                     MessageBoxButton.OK,
+                     MessageBoxImage.Warning
+                     );
                 }
             }
             else
             {
-                MessageBoxResult result = MessageBox.Show(
+                 MessageBoxResult result = MessageBox.Show(
                  "Senha Invalida. A senha deve conter caracteres maiúsculos, minúsculos, numéricos e especiais, além de nó minimo 8 caracteres.",
                  "Informação",
                  MessageBoxButton.OK,

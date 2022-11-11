@@ -42,4 +42,11 @@ INSERT INTO Usuario (nome, email, senha, tipoUsuario, dataHoraInclusao) VALUES
 ('Gerente','gerente@gmail.com','G3rente@','gerente','2022-11-07 15:00:00'),
 ('Caixa','caixa@gmail.com','C@1xa123','caixa','2022-11-07 15:00:00');
 
+INSERT INTO Produto (nome, quantidade, precoUnitario, fornecedor, dataHoraInclusao) VALUES
+('Leite', 100, 7.99,'Ninho','2022-11-02 09:30:00'),
+('Água mineral', 100, 2,'Passa Quatro','2022-11-02 09:30:00'),
+('Nuggets', 10000, 25.90,'Seara','2022-11-02 09:30:00'),
+('Iogurte', 500, 12.50,'Nestle','2022-11-02 09:30:00'),
+('Cigarro', 5000, 11.50,'Malboro','2022-11-02 09:30:00');
+
 

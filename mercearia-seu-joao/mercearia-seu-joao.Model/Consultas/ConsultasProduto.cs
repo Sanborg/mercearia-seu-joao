@@ -19,7 +19,6 @@ public class ConsultasProduto
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
-            comando.CommandText = @"INSERT INTO Produto (nome, quantidade, "
         }
         catch (Exception e)
         {   

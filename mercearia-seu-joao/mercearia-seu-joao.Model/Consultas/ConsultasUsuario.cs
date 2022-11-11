@@ -10,7 +10,7 @@ public class ConsultasUsuario
     public static Usuario BuscarDadosUsuario(string email, string senha)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-        Usuario usuario = new Usuario();
+        Usuario usuario = null;
 
         try
         {
@@ -23,6 +23,7 @@ public class ConsultasUsuario
             var leitura = comando.ExecuteReader();
             while (leitura.Read())
             {
+                usuario = new Usuario();
                 usuario.id = leitura.GetInt32("id");
                 usuario.nome = leitura.GetString("nome");
                 usuario.email = leitura.GetString("email");
