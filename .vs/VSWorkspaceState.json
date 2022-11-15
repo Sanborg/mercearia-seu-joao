@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\mercearia-seu-joao",
+    "\\mercearia-seu-joao\\mercearia-seu-joao.View"
   ],
-  "SelectedNode": "\\mercearia-seu-joao.sln",
+  "SelectedNode": "\\mercearia-seu-joao\\mercearia-seu-joao.View\\frmVenderProduto.xaml",
   "PreviewInSolutionExplorer": false
 }

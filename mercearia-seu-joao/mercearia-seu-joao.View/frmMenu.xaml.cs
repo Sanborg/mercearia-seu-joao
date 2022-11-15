@@ -69,8 +69,8 @@ namespace mercearia_seu_joao.View
 
         private void PressionarBtnEfetuarVenda(object sender, RoutedEventArgs e)
         {
-            Window frmVenda = new frmVenderProduto();
-            frmVenda.Show();
+            Window frmVenderProduto = new frmVenderProduto();
+            frmVenderProduto.Show();
         }
 
         private void PressionarBtnSair(object sender, RoutedEventArgs e)

@@ -114,7 +114,7 @@ public class ConsultasProduto
         return foiAtualizado;
     }
 
-    public static List<Produto> ObterTodosProdutos(int id)
+    public static List<Produto> ObterTodosOsProdutos()
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         List<Produto> listadeProdutos = new List<Produto>();
@@ -125,8 +125,7 @@ public class ConsultasProduto
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                SELECT * FROM Produto WHERE id = @id;";
-            comando.Parameters.AddWithValue("@id", id);
+                SELECT * FROM Produto";
             var leitura = comando.ExecuteReader();
             while(leitura.Read())
             {

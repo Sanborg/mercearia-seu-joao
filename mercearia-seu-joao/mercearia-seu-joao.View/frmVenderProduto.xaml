@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="Vender Produto" Height="700" Width="950">
+        Title="Vender Produto" ShowInTaskbar="False" Height="700" Width="950">
     <Grid x:Name="background" Background="#FF3E3C3C">
         <TextBlock x:Name="txtIdProduto" HorizontalAlignment="Left" Margin="22,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Text="I"/><Run Language="pt-br" Text="D"/><Run Text=" produto"/></TextBlock>
         <TextBox x:Name="boxId" HorizontalAlignment="Left" Margin="22,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
         <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="122,74,0,0" VerticalAlignment="Top" Height="38" Width="79" FontSize="18" Background="#FF4294FF" FontWeight="Bold" Click="BuscarProduto"/>
         <TextBlock x:Name="txtNomeProduto" HorizontalAlignment="Left" Margin="22,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Foreground="White"><Run Language="pt-br" Text="Nome"/></TextBlock>
-        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="22,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Height="40"/>
+        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="22,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Height="40" IsEnabled="False"/>
         <TextBox x:Name="boxQuantidade" HorizontalAlignment="Left" Margin="22,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
-        <TextBox x:Name="boxPrecoTotalProduto" HorizontalAlignment="Left" Margin="129,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
+        <TextBox x:Name="boxPrecoTotalProduto" HorizontalAlignment="Left" Margin="129,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40" IsEnabled="False"/>
         <TextBlock x:Name="quantidade" HorizontalAlignment="Left" Margin="22,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Language="pt-br" Text="Quantidade"/></TextBlock>
         <TextBlock x:Name="txtPreco" HorizontalAlignment="Left" Margin="130,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Language="pt-br" Text="Preço Total"/></TextBlock>
         <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="22,320,0,0" VerticalAlignment="Top" Height="35" Width="181" FontSize="18" Background="#FF4294FF" FontWeight="Bold" Click="AdicionarProduto"/>

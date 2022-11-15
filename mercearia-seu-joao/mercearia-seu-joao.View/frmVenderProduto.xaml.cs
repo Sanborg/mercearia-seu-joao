@@ -27,7 +27,10 @@ namespace mercearia_seu_joao.View
 
         private void BuscarProduto(object sender, RoutedEventArgs e)
         {
-            
+            listaDeProdutos.Clear();
+            listaDeProdutos = ConsultasProduto.ObterTodosOsProdutos();
+            datagridProdutos.ItemsSource = listaDeProdutos;
+            datagridProdutos.Items.Refresh();
         }
 
         private void AdicionarProduto(object sender, RoutedEventArgs e)
@@ -35,21 +38,23 @@ namespace mercearia_seu_joao.View
             if (VerificaCampos() == true)
             {
                 Produto produto = new Produto();
+                produto.id = RetornaUltimoIdIncrementadoDaLista();
                 produto.nome = boxNome.Text;
                 produto.quantidade = int.Parse(boxQuantidade.Text);
                 int precoTotal = produto.quantidade * produto.precoUnitario;
                 boxPrecoTotalProduto.Text = precoTotal.ToString();
-
+                listaDeProdutos.Add(produto);
+                AtualizaDataGrid();
             }
-            else
-            {
-                MessageBoxResult result = MessageBox.Show(
-                    "Preencha todos os campos!",
-                    "Atenção",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Warning);
-            }
+           
         }
+        
+        private void AtualizaDataGrid ()
+        {
+            datagridProdutos.ItemsSource = listaDeProdutos;
+            datagridProdutos.Items.Refresh();
+        }
+
         private bool VerificaCampos ()
         {
             if (boxNome.Text != "" && boxQuantidade.Text != "" && boxPrecoTotalProduto.Text != "")
@@ -62,16 +67,25 @@ namespace mercearia_seu_joao.View
             }
         }
 
-        private int RetornaUltimoIdDaLista()
+        private int RetornaUltimoIdIncrementadoDaLista()
         {
             int id = 0;
-            foreach
+            if (listaDeProdutos.Count > 0)
+            {
+                int index = listaDeProdutos.Count - 1;
+                id = listaDeProdutos[index].id;
+            }
+            id++;
+            return id;
         }
 
         private void LimparProduto(object sender, RoutedEventArgs e)
- 
-       {
 
+        {
+            boxId.Text = "";
+            boxNome.Text = "";
+            boxPrecoTotalProduto.Text = "";
+            boxQuantidade.Text = "";
         }
 
         private void RealizarVenda(object sender, RoutedEventArgs e)
@@ -81,7 +95,11 @@ namespace mercearia_seu_joao.View
         
         private void PegarItemNoGrid(object sender, MouseButtonEventArgs e)
         {
-
+            Produto produto = (Produto)datagridProdutos.SelectedItem;
+            boxId.Text = produto.id.ToString();
+            boxNome.Text = produto.nome;
+            boxQuantidade.Text= produto.quantidade.ToString();
+            boxPrecoTotalProduto.Text = produto.precoUnitario.ToString();
         }
     }
 }

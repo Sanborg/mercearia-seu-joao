@@ -29,7 +29,7 @@ namespace mercearia_seu_joao.View
                 id = 1,
                 nome = "Leite",
                 quantidade = 200,
-                preco_unitario = 6,
+                precoUnitario = 6,
                 fornecedor = "Jerson"
             };
             listaDeProdutos.Add(Produto);
@@ -42,10 +42,10 @@ namespace mercearia_seu_joao.View
             if (verificaCampos() == true)
             {
                 Produto Produto = new Produto();
-                Produto.nome = txtbox_nome.Text;
-                Produto.preco_unitario = int.Parse(txtbox_preco_unitario.Text);
-                Produto.fornecedor = txtbox_fornecedor.Text;
-                Produto.quantidade = int.Parse(txtbox_quantidade.Text);
+                Produto.nome = boxNomeProduto.Text;
+                Produto.precoUnitario = int.Parse(boxPrecoUnitario.Text);
+                Produto.fornecedor = boxFornecedorProduto.Text;
+                Produto.quantidade = int.Parse(boxQuantidadeProduto.Text);
             }
             else
             {
@@ -57,7 +57,7 @@ namespace mercearia_seu_joao.View
         }
         private bool verificaCampos()
         {
-            if (txtbox_nome.Text != "" && txtbox_fornecedor.Text != "" && txtbox_preco_unitario.Text != "" && txtbox_quantidade.Text != "")
+            if (boxNomeProduto.Text != "" && boxFornecedorProduto.Text != "" && boxPrecoUnitario.Text != "" && boxQuantidadeProduto.Text != "")
             {
                 return true;
             }
@@ -90,10 +90,10 @@ namespace mercearia_seu_joao.View
         {
             Produto Produto = (Produto)datagrid.SelectedItems;
             txtbox_id.Text = Produto.id.ToString();
-            txtbox_nome.Text = Produto.nome;
-            txtbox_preco_unitario.Text = Produto.preco_unitario.ToString();
-            txtbox_quantidade.Text = Produto.quantidade.ToString();
-            txtbox_fornecedor.Text = Produto.fornecedor;
+            boxNomeProduto.Text = Produto.nome;
+            boxPrecoUnitario.Text = Produto.precoUnitario.ToString();
+            boxQuantidadeProduto.Text = Produto.quantidade.ToString();
+            boxFornecedorProduto.Text = Produto.fornecedor;
         }
 
         private void PegarItemNoGrid(object sender, MouseButtonEventArgs e)
