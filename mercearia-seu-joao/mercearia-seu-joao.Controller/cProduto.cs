@@ -18,8 +18,8 @@ public class cProduto
     {
         return ConsultasProduto.AtualizarProduto(id, nome, fornecedor, quantidade, precoUnitario, dataHoraInclusao);
     }
-    public static List<Produto> ObterTodosOsProdutos()
+    public static List<Produto> ObterTodosOsProdutos(int id)
     {
-        return ConsultasProduto.ObterTodosOsProdutos();
+        return ConsultasProduto.ObterTodosOsProdutos(id);
     }
 }
