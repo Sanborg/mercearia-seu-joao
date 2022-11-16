@@ -11,6 +11,7 @@ email varchar(100),
 senha varchar(100),
 tipoUsuario varchar(100),
 dataHoraInclusao datetime,
+dataHoraAlteracao datetime,
 dataHoraExclusao datetime,
 PRIMARY KEY(id)
 )DEFAULT CHARSET = utf8;
@@ -22,6 +23,7 @@ quantidade int,
 precoUnitario float,
 fornecedor varchar(100),
 dataHoraInclusao datetime,
+dataHoraAlteracao datetime,
 dataHoraExclusao datetime,
 PRIMARY KEY(id)
 )DEFAULT CHARSET = utf8;
@@ -48,5 +50,4 @@ INSERT INTO Produto (nome, quantidade, precoUnitario, fornecedor, dataHoraInclus
 ('Nuggets', 10000, 25.90,'Seara','2022-11-02 09:30:00'),
 ('Iogurte', 500, 12.50,'Nestle','2022-11-02 09:30:00'),
 ('Cigarro', 5000, 11.50,'Malboro','2022-11-02 09:30:00');
-
 

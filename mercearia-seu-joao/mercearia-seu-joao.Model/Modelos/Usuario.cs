@@ -12,5 +12,6 @@ public class Usuario
     public string senha { get; set; }
     public string tipoUsuario { get; set; }
     public DateTime dataHoraInclusao { get; set; }
+    public DateTime dataHoraAlteracao { get; set; }
     public DateTime dataHoraExclusao { get; set; }
 }

@@ -175,3 +175,5 @@ C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercea
 C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.pdb
 C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\mercearia-seu-joao.View.genruntimeconfig.cache
 C:\Users\rafas\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ref\mercearia-seu-joao.View.dll
+C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ItemDaLista.g.cs
+C:\Users\RES0112515\source\repos\Sanborg\mercearia-seu-joao\mercearia-seu-joao\mercearia-seu-joao.View\obj\Debug\net6.0-windows\ItemDaLista.baml
