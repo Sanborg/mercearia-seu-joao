@@ -28,7 +28,7 @@ namespace mercearia_seu_joao.View
         private void BuscarProduto(object sender, RoutedEventArgs e)
         {
             listaDeProdutos.Clear();
-            listaDeProdutos = ConsultasProduto.ObterTodosOsProdutos();
+            listaDeProdutos = cProduto.ObterTodosOsProdutos();
             datagridProdutos.ItemsSource = listaDeProdutos;
             datagridProdutos.Items.Refresh();
         }
