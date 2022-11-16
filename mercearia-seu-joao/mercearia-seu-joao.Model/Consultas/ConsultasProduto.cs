@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 public class ConsultasProduto
 {
-    public static bool InserirProduto(string nome, string fornecedor, int quantidade, float precoUnitario, DateTime dataHoraInclusao)
+    public static bool InserirProduto(string nome, string fornecedor, int quantidade, float precoUnitario, string dataHoraInclusao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiInserido = false;
@@ -45,7 +45,7 @@ public class ConsultasProduto
         return foiInserido;
     }
 
-    public static bool ExcluirProduto(int id, DateTime dataHoraExclusao)
+    public static bool ExcluirProduto(int id, string dataHoraExclusao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiExcluido = false;
@@ -77,7 +77,7 @@ public class ConsultasProduto
         }
         return foiExcluido;
     }
-    public static bool AtualizarProduto(int id,string nome, string fornecedor, int quantidade, float precoUnitario, DateTime dataHoraInclusao)
+    public static bool AtualizarProduto(int id, string nome, string fornecedor, int quantidade, int precoUnitario, DateTime dataHoraInclusao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiAtualizado = false;
@@ -114,26 +114,26 @@ public class ConsultasProduto
         return foiAtualizado;
     }
 
-    public static List<Produto> ObterTodosOsProdutos(int id)
+    public static List<Produto> ObterTodosOsProdutos()
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         List<Produto> listadeProdutos = new List<Produto>();
+
 
         try
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                SELECT * FROM Produto WHERE id = @id";
-            comando.Parameters.AddWithValue("@id", id);
+                SELECT * FROM Produto";
             var leitura = comando.ExecuteReader();
-            while(leitura.Read())
+            while (leitura.Read())
             {
                 Produto produto = new Produto();
                 produto.id = leitura.GetInt32("id");
                 produto.nome = leitura.GetString("nome");
                 produto.quantidade = leitura.GetInt32("quantidade");
-                produto.precoUnitario = leitura.GetFloat("precoUnitario");
+                produto.precoUnitario = leitura.GetInt32("precoUnitario");
                 produto.fornecedor = leitura.GetString("fornecedor");
                 produto.dataHoraInclusao = leitura.GetDateTime("dataHoraInclusao");
 
@@ -154,4 +154,3 @@ public class ConsultasProduto
         return listadeProdutos;
     }
 }
-

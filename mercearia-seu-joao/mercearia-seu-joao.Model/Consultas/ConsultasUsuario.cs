@@ -61,8 +61,9 @@ public class ConsultasUsuario
             comando.Parameters.AddWithValue("@nome", nome);
             comando.Parameters.AddWithValue("@senha", senha);
             comando.Parameters.AddWithValue("@tipoUsuario", tipoUsuario);
-            comando.Parameters.AddWithValue("@dataHoraInclusao", DateTime.Today);
+            comando.Parameters.AddWithValue("@dataHoraInclusao", DateTime.Now);
             var leitura = comando.ExecuteReader();
+
             foiAdicionado = true;
 
 
@@ -95,7 +96,7 @@ public class ConsultasUsuario
             comando.CommandText = @"
                  INSERT INTO Usuario (dataHoraExclusao)
                   VALUES (@dataHoraExclusao)";
-            comando.Parameters.AddWithValue("@dataHoraExclusao", DateTime.Today);
+            comando.Parameters.AddWithValue("@dataHoraExclusao", DateTime.Now);
             var leitura = comando.ExecuteReader();
             foiExcluido = true;
 
@@ -130,7 +131,7 @@ public class ConsultasUsuario
             comando.Parameters.AddWithValue("@nome", nome);
             comando.Parameters.AddWithValue("@senha", senha);
             comando.Parameters.AddWithValue("@tipoUsuario", tipoUsuario);
-            comando.Parameters.AddWithValue("@dataHoraInclusao", DateTime.Today);
+            comando.Parameters.AddWithValue("@dataHoraInclusao", DateTime.Now);
             var leitura = comando.ExecuteReader();
             foiAdicionado = true;
 
