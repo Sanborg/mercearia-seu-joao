@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
         Title="frmProduto" Height="700" Width="950"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#FF3E3C3C">
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Foreground="White"><Run Text="Gerenciar "/><Run Language="pt-br" Text="P"/><Run Text="roduto"/></TextBlock>
         <TextBox HorizontalAlignment="Center" Margin="0,57,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="950" Height="1" RenderTransformOrigin="0.5,0.5">

@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="Vender Produto" ShowInTaskbar="False" Height="700" Width="950">
+        Title="Vender Produto" ShowInTaskbar="False" Height="700" Width="950"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid x:Name="background" Background="#FF3E3C3C">
         <TextBlock x:Name="txtIdProduto" HorizontalAlignment="Left" Margin="22,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="White"><Run Text="I"/><Run Language="pt-br" Text="D"/><Run Text=" produto"/></TextBlock>
         <TextBox x:Name="boxId" HorizontalAlignment="Left" Margin="22,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Height="40"/>
