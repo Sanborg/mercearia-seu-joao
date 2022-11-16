@@ -55,10 +55,6 @@ namespace mercearia_seu_joao.View
                 return false;
             }
         }
-        private bool verificasenha()
-        {
-            if()
-        }
         private void AlterarUsuario(object sender, RoutedEventArgs e)
         {
             if (boxId.Text != "")
