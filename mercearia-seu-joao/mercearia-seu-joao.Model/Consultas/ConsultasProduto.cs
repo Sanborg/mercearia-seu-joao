@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 public class ConsultasProduto
 {
-    public static bool InserirProduto(string nome, string fornecedor, int quantidade, int precoUnitario, DateTime dataHoraInclusao)
+    public static bool InserirProduto(string nome, string fornecedor, int quantidade, float precoUnitario, DateTime dataHoraInclusao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiInserido = false;
@@ -77,7 +77,7 @@ public class ConsultasProduto
         }
         return foiExcluido;
     }
-    public static bool AtualizarProduto(int id,string nome, string fornecedor, int quantidade, int precoUnitario, DateTime dataHoraInclusao)
+    public static bool AtualizarProduto(int id,string nome, string fornecedor, int quantidade, float precoUnitario, DateTime dataHoraInclusao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiAtualizado = false;
@@ -119,7 +119,6 @@ public class ConsultasProduto
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         List<Produto> listadeProdutos = new List<Produto>();
 
-
         try
         {
             conexao.Open();
@@ -134,7 +133,7 @@ public class ConsultasProduto
                 produto.id = leitura.GetInt32("id");
                 produto.nome = leitura.GetString("nome");
                 produto.quantidade = leitura.GetInt32("quantidade");
-                produto.precoUnitario = leitura.GetInt32("precoUnitario");
+                produto.precoUnitario = leitura.GetFloat("precoUnitario");
                 produto.fornecedor = leitura.GetString("fornecedor");
                 produto.dataHoraInclusao = leitura.GetDateTime("dataHoraInclusao");
 

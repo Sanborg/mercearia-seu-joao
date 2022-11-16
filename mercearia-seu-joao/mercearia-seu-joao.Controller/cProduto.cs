@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class cProduto
 {
-    public static bool InserirProduto(string nome, string fornecedor, int quantidade, int precoUnitario, DateTime dataHoraInclusao)
+    public static bool InserirProduto(string nome, string fornecedor, int quantidade, float precoUnitario, DateTime dataHoraInclusao)
     {
         return ConsultasProduto.InserirProduto(nome, fornecedor, quantidade, precoUnitario, dataHoraInclusao);
     }

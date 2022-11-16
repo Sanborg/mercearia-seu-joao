@@ -10,7 +10,7 @@ public class Produto
     public int id { get; set; }
     public string nome { get; set; }
     public int quantidade { get; set; }
-    public int precoUnitario { get; set; }
+    public float precoUnitario { get; set; }
     public string fornecedor { get; set; }
     public DateTime dataHoraInclusao { get; set; }
     public DateTime dataHoraAlteracao { get; set; }

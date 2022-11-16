@@ -25,12 +25,16 @@ namespace mercearia_seu_joao.View
             InitializeComponent();
         }
 
-        private void BuscarProduto(object sender, RoutedEventArgs e)
+        public void BuscarProduto(object sender, RoutedEventArgs e)
         {
-            listaDeProdutos.Clear();
-            listaDeProdutos = cProduto.ObterTodosOsProdutos(int.Parse(boxId.Text));
-            datagridProdutos.ItemsSource = listaDeProdutos;
-            datagridProdutos.Items.Refresh();
+            if(boxId.Text != "")
+            {
+                listaDeProdutos.Clear();
+                listaDeProdutos = cProduto.ObterTodosOsProdutos(int.Parse(boxId.Text));
+                datagridProdutos.ItemsSource = listaDeProdutos;
+                datagridProdutos.Items.Refresh();
+            }
+
         }
 
         private void AdicionarProduto(object sender, RoutedEventArgs e)
@@ -41,7 +45,7 @@ namespace mercearia_seu_joao.View
                 produto.id = RetornaUltimoIdIncrementadoDaLista();
                 produto.nome = boxNome.Text;
                 produto.quantidade = int.Parse(boxQuantidade.Text);
-                int precoTotal = produto.quantidade * produto.precoUnitario;
+                float precoTotal = produto.quantidade * produto.precoUnitario;
                 boxPrecoTotalProduto.Text = precoTotal.ToString();
                 listaDeProdutos.Add(produto);
                 AtualizaDataGrid();
